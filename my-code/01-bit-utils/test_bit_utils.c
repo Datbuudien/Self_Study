@@ -15,8 +15,8 @@ int main (){
     assert(toggle_bit(0x2u,0)==0x3u);
     assert(check_bit(0x4u,2)==true);
     assert(check_bit(0x4u,1)==false);
-    assert(read_bifield(0xF0u,4,4)==0xFu);
-    assert(write_bitfield(0u,2,2,0xFu)==0xC0u);
+    assert(read_bitfield(0xF0u,4,4)==0xFu);
+    assert(write_bitfield(0u,2,2,0xFu)==0x0Cu);
     uint32_t reg=0u;
     reg=set_bit(reg,ENABLE_POS);
     reg=set_bit(reg,IE_POS);
